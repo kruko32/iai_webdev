@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://assassins-arms.com/gfx/pol/fontello.eot?r=1563359320');
+    src: url('https://assassins-arms.com/gfx/pol/fontello.eot#iefix') format('embedded-opentype'), url('https://assassins-arms.com/gfx/pol/fontello.woff?r=1563359320') format('woff'), url('https://assassins-arms.com/gfx/pol/fontello.ttf?r=1563359320') format('truetype'), url('https://assassins-arms.com/gfx/pol/fontello.svg#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+div.top_contact_bar {
+    display: table;
+    margin: 0 auto;
+    height: 29px;
+    width: 100%;
+    position: relative;
+}
+.top_contact_data {
+    display: table;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 65px;
+    margin-top: -2px;
+}
+.top_contact_data a{
+    margin-right: 25px;
+    margin-left: 8px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 9px;
+    text-decoration: none;
+}
+
+.top_contact_bar:before{
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: -5;
+    background: #2e2e2e;
+    left: -100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 300%;
+}
+.top_contact_phone{
+    margin-right:2px;
+}
+.top_contact_phone:before{
+    content: '\E819';
+    font-family: FontAwesome;
+    color: #b62323;
+    margin-right: 5px;
+}
+.top_contact_mail{
+    margin-right:2px;
+}
+.top_contact_mail:before {
+    content: '\e816';
+    font-family: FontAwesome;
+    color: #b62323;
+    margin-right: 5px;
+}
+.top_contact_fb{
+    margin-left:-3px;
+}
+.top_contact_fb:before {
+    content: '\f09a';
+    font-family: FontAwesome;
+    color: #b62323;
+    margin-right: 5px;
+}
+header:before {
+    content: '';
+    position: absolute;
+    display: block !important;
+    z-index: -10;
+    background: #eaeaea url(../images/clip.png) repeat-x;
+    left: -30%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 105px;
+    width: 150%;
+}
+#logo{
+    padding-top:22px;
+    padding-left: 89px;
+}
+#top_search_box {
+    position: relative;
+    left: -3px;
+    top: 18px;
+    height: 39px;
+}
+#top_search_box input {
+    height: 5px;
+    width: 227px;
+    padding: 18px;
+    font-size: 10px;
+    border-color: transparent;
+}
+#search_button {
+    position: relative;
+    left: 228px;
+    top: -39px;
+}
+#search_button button {
+    border: 0;
+    height: 39px;
+    width: 37px;
+    background: #333333;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.settings_menu{
+    position: relative;
+    margin-top: -21px;
+    left: -26px;
+    padding-left: 0px;
+}
+.language_select{
+    position: inherit;
+}
+.open_trigger > img{
+    position: relative;
+    top: -3px;
+    margin-left: -6px;
+}
+#your_account {
+    position: relative;
+    top: 27px;
+    left: 75px;
+    height: 100px;
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.basket{
+    right: -161px;
+    top: -103px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 8px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    width: 148px;
+}
+.basket > a{
+    display: inline-block;
+    color: #fff;
+    padding: 23px 0px 0px 11px;
+    width: 188px;
+}
+.basket b {
+    display: block;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.basket strong{
+    display: block;
+    font-size: 1.75em;
+
+
+}
+.basket > a:before {
+    content: ' ';
+    background: url(../images/basket-gfx.png) no-repeat;
+    width: 38px;
+    height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -8px 3px 0 0;
+    float: left;
+}
+.basket:before {
+    background: url(../images/bg_badge.png) no-repeat bottom center;
+    position: absolute;
+    content: '';
+    width: 100%;
+    right: 0;
+    height: 200px;
+    z-index: -1;
+    top: -106px;
+}
+.current_language{
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top:5px;
+}
+.current_language:after {
+    content: url(../images/pol.png);
+    position: relative;
+    top: 3px;
+    left:2px;
+    margin-right: 5px;
+}
+.settings_menu .open_trigger {
+    position: relative;
+    top: 47px;
+    width: 61px;
+    height: 25px;
+    cursor: pointer;
+    border-right: 1px solid #808080b5;
+}
+[class^='icon-'], [class*=' icon-'] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *margin-right: .3em;
+}
+#your_account{
+    font-weight:bold;
+}
+#footer_links {
+    margin: 0 auto;
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.footer_links_label {
+    display: block;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.071em;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+ul.footer_links_sub {
+    list-style: none;
+    line-height: 1;
+    font-size: 1em;
+}
+ul.footer_links {
+    list-style: none;
+    margin-bottom: 30px;
+    flex-basis: auto;
+    padding-left: 35px;
+    border-right: 1px solid #333;
+}
+.copyright_container{
+    display: block;
+    width: 100vw !important;
+    position: relative !important;
+    margin-left: -50vw !important;
+    left: 50% !important;
+}
+.copyright_logo{
+    margin: 0 auto;
+    width: 970px;
+    padding: 20px 0;
+    text-align: center;
+}
