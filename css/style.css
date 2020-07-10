@@ -256,16 +256,25 @@ ul.footer_links {
     padding-left: 35px;
     border-right: 1px solid #333;
 }
-.copyright_container{
-    display: block;
-    width: 100vw !important;
-    position: relative !important;
-    margin-left: -50vw !important;
-    left: 50% !important;
+div.copyright_container{
+    margin: 0 auto;
 }
-.copyright_logo{
+div.copyright_logo{
     margin: 0 auto;
     width: 970px;
     padding: 20px 0;
     text-align: center;
+}
+img.idosell_logo{
+    display: inline !important;
+}
+
+footer {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    margin-top: 10px;
+    background: #171717 url(../images/bg-footer.png) repeat-x center top;
+    padding-top: 15%;
+    background-size: contain;
 }
