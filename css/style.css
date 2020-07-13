@@ -86,6 +86,10 @@ header:before {
     height: 105px;
     width: 150%;
 }
+header{
+    height: 201px;
+
+}
 #logo{
     padding-top:22px;
     padding-left: 89px;
@@ -293,18 +297,22 @@ header .nav-link{color:#333333;display:block;padding:15px 10px}
     width: 100vw;
     position: absolute;
     margin-left: -50vw;
-    top: -8px;
-    left: 233%;
+    top: 0px;
+    left: 50%;
     height: 27px;
     z-index: -1;
     background: #eaeaea url(../images/navibar.png) repeat-x center;
 }
+
+
+
 .navigator{
-    position: absolute;
-    display: inline;
-    top: 161px;
-    left: -45px;
-    width: 23%;
+    display: table;
+    margin: 0 auto;
+    height: 27px;
+    width: 100%;
+    position: relative;
+    top: -100px;
     font-size: 9px;
     letter-spacing: 0.4px;
     z-index: -1;
@@ -316,8 +324,8 @@ header .nav-link{color:#333333;display:block;padding:15px 10px}
 }
 #navi_content{
     position: absolute;
-    left: 339px;
-    top: -1px;
+    left: 75px;
+    top: 6px;
     width: 500px;
 }
 #footer_links {
@@ -388,7 +396,7 @@ footer {
 #social_buttons{
     position: relative;
     left: -14px;
-    widht:10%
+    widht:10%;
     height:auto;
 }
 ul.footer_links_sub img{
@@ -427,4 +435,93 @@ ul.footer_links li{
 }
 #contact_down{
     height:36px;
+}
+#layout {
+    margin: 0 auto 30px;
+}
+#product_projector {
+    margin: 0;
+    font-size: 0.93em;
+    margin-bottom: 30px;
+}
+#projector_form div.photos {
+    padding-left: 0;
+}
+#projector_form div.product_info {
+    padding-right: 0;
+    font-size: 0.93em;
+    padding-left: 0;
+}
+#product_projector h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.brand {
+    color: red;
+    font-weight: bold;
+}
+.product_section_sub div {
+    display:inline-block;
+    border: rgba(46, 46, 46, 0.2);
+    border-style: solid;
+    border-width: thin;
+    width:55px;
+    height:55px;
+    margin-right:10px;
+}
+.product_section_sub div:hover {
+    border-style: none;
+    border-bottom: 2px solid #b62323;
+}
+
+.product_section{
+    font-size: 10px;
+}
+.barrel_config_length{
+    display:inline-block;
+    margin-right:20px;
+    width: 190px;
+}
+.barrel_config_cal{
+    display:inline-block;
+    width: 190px;
+}
+.barrel_config_length select{
+    width: 180px;
+    height:35px;
+}
+.barrel_config_cal select{
+    width: 180px;
+    height:35px;
+}
+.parameters{
+    text-transform: uppercase;
+}
+.product_info_top div{
+    display:inline-block;
+}
+.product_info_top{
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.brand{
+    text-transform: capitalize;
+}
+.product_section_sub{
+    padding-bottom: 15px;
+}
+.photos{
+    padding-left:0;
+}
+.product_info{
+    padding-left:0;
+    padding-right:0;
 }
