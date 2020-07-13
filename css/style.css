@@ -453,18 +453,10 @@ ul.footer_links li{
     padding-left: 0;
 }
 #product_projector h1 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333333;
-    margin: 0;
-    line-height: 1.1em;
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: uppercase;
-    margin-bottom: 13px;
+    width: 250px;
 }
 .brand {
-    color: red;
+    color: #b62323;
     font-weight: bold;
 }
 .product_section_sub div {
@@ -486,7 +478,7 @@ ul.footer_links li{
 }
 .barrel_config_length{
     display:inline-block;
-    margin-right:20px;
+    margin-right:10px;
     width: 190px;
 }
 .barrel_config_cal{
@@ -494,12 +486,14 @@ ul.footer_links li{
     width: 190px;
 }
 .barrel_config_length select{
-    width: 180px;
+    width: 190px;
     height:35px;
+    font-weight: bold;
 }
 .barrel_config_cal select{
-    width: 180px;
+    width: 190px;
     height:35px;
+    font-weight: bold;
 }
 .parameters{
     text-transform: uppercase;
@@ -524,4 +518,61 @@ ul.footer_links li{
 .product_info{
     padding-left:0;
     padding-right:0;
+}
+.bundle_projector_sub div{
+    display: inline-block;
+    margin:0 auto;
+}
+.bundle_element_1{
+    border-right: 1px solid rgba(51, 51, 51, 0.51);
+}
+.bundle_element_2{
+    border-right: 1px solid rgba(51, 51, 51, 0.51);
+}
+#content h1{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    line-height: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.product_section_sub img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.label:before {
+    content: '';
+    background: transparent url(../images/bg-labels-before.png) no-repeat 0 0;
+    height: 23px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 15px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+.bundle_projector{
+    position: relative;
+    left: 57px;
+}
+.bundle_projector_sub{
+    padding-left: 30px;
+
+}
+.bundle_projector_sub span{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.text1{
+    width: 150px;
+}
+.text2{
+    width: 150px;
+}
+.text3{
+    width: 150px;
 }
