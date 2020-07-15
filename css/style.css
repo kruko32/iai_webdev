@@ -471,18 +471,17 @@ ul.footer_links li{
 }
 .product_section_sub div {
     display:inline-block;
-    border: rgba(46, 46, 46, 0.2);
-    border-style: solid;
-    border-width: thin;
+    border: 2px none;
     width:55px;
     height:55px;
     margin-right:10px;
 }
 .product_section_sub div:hover {
-    border-style: none;
     border-bottom: 2px solid #b62323;
 }
-
+.product_section_sub img{
+    border: 0.2px solid rgba(147, 147, 147, 0.2);
+}
 .product_section{
     font-size: 10px;
 }
@@ -515,6 +514,7 @@ ul.footer_links li{
     font-size: 11px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 .brand{
     text-transform: capitalize;
@@ -814,5 +814,172 @@ ul.footer_links li{
     transform: scale(1.1);
 }
 .send_question_label h6{
-    width:200px;
+    width: 200px;
+
+}
+.send_question_button_wrapper{
+    padding-top: 20px;
+}
+.main_photo{
+    padding-left: 10px;
+    display: inline-block;
+    align-items: center;
+    width: 75%;
+    height: 460px;
+}
+.photos_selector_sub{
+    width: 60px;
+    float: left;
+    margin-left: 60px;
+    margin-top: -15px;
+}
+.photos_selector_sub div {
+    margin-bottom: 10px;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+.photos_selector_sub > div:hover{
+    border-bottom: 2px solid #b62323;
+}
+.photos_selector_sub img{
+    display: inline-block;
+    float: left;
+    border: 0.2px solid rgba(147, 147, 147, 0.2);
+}
+.photo{
+    display: inline-block;
+}
+.photos_selector_sub i{
+    transform: scale(2);
+    transition: scale .5s;
+    padding: 15px 25px;
+    width:10px;
+}
+.photos_selector_sub i:hover{
+    transform: scale(2.5);
+}
+.warehouse_status{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 35px;
+}
+.warehouse_status div{
+    float: left;
+    display: inline-block;
+}
+.warehouse_state{
+    height:100%;
+    width:50%;
+    background-color: skyblue;
+}
+.info span{
+    display: block;
+
+}
+.shipping_cost{
+    height:100%;
+    width:50%;
+    background-color: saddlebrown;
+}
+
+.price_tag{
+    width: 90%;
+    height:50px;
+    margin-bottom: 10px;
+}
+.price_tag div{
+    float: left;
+    display: inline-block;
+}
+.actual_price{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+.quantity{
+    width: 20%;
+    height: 100%;
+    border: 0.2px solid rgba(135, 135, 135, 0.25);
+    background-color: green;
+}
+.add_to_cart{
+    width: 40%;
+    height: 100%;
+    background-color: blue;
+}
+
+.price_negotiate{
+    width: 90%;
+    height:35px;
+
+}
+.price_negotiate div{
+    float: left;
+    display: inline-block;
+}
+.price_negotiate_sub{
+    height:100%;
+    width:50%;
+    background-color: yellowgreen;
+}
+.compare{
+    height:100%;
+    width:50%;
+    background-color: pink;
+
+}
+
+.bottom_info_menu{
+    margin: 0;
+    margin-top:10px;
+    border: 0.2px solid rgba(147, 147, 147, 0.2);
+    width: 90%;
+    height:115px;
+
+}
+.bottom_info_menu:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: -12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 14px 12px 14px;
+    border-color: transparent transparent #ffffff transparent;
+    z-index: 1;
+}
+.bottom_info_menu div{
+    float:left;
+    display: inline-block;
+}
+.free_shiping{
+    width:50%;
+    height:50%;
+    background-color: red;
+}
+.goods_return{
+    width:50%;
+    height:50%;
+    background-color: grey;
+}
+.installments{
+    width:50%;
+    height:50%;
+    background-color: green;
+}
+.warranty{
+    width:50%;
+    height:50%;
+    background-color: blue;
+}
+.info span{
+    width:100%;
+    vertical-align: middle;
+}
+.info img{
+    transform: scale(0.8);
 }
