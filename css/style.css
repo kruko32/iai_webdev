@@ -160,21 +160,25 @@ header{
     font-family: 'Montserrat';
     font-weight: normal;
     width: 148px;
+
 }
 .basket > a{
     display: inline-block;
     color: #fff;
     padding: 23px 0 0 11px;
     width: 188px;
+    text-decoration: none;
 }
 .basket b {
     display: block;
     font-size: 1em;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .basket strong{
     display: block;
     font-size: 1.75em;
+    text-decoration: none;
 
 
 }
@@ -230,6 +234,7 @@ header{
 }
 #your_account{
     font-weight:bold;
+
 }
 
 header #menu_categories {
@@ -279,7 +284,7 @@ header .navbar-nav li:hover > ul{display:block}
 header .navbar-nav ul.active{display:block}
 header .navbar-nav > li{display:inline-block}
 header .nav-link{color:#333333;display:block;padding:15px 10px}
-.navbar-nav > .nav-item {
+.navbar-nav > .nav-item > a {
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 .navbar-nav > .nav-item > a:hover {
@@ -389,10 +394,15 @@ footer {
     padding-top: 15%;
     background-size: contain;
 }
-.social_button_wrapper{
+.social_button_wrapper {
     display: inline;
     margin-right: 20px;
+    transition: transform .5s;
 }
+.social_button_wrapper :hover{
+    transform: scale(1.1);
+}
+
 #social_buttons{
     position: relative;
     left: -14px;
@@ -522,6 +532,13 @@ ul.footer_links li{
 .bundle_projector_sub div{
     display: inline-block;
     margin-left: 40px;
+
+}
+.bundle_projector_sub div img{
+    transition: transform .2s;
+}
+.bundle_projector_sub div img :hover{
+    transform: scale(1.1);
 }
 .bundle_element_1{
     border-right: 1px solid rgba(51, 51, 51, 0.51);
@@ -529,6 +546,7 @@ ul.footer_links li{
 .bundle_element_2{
     border-right: 1px solid rgba(51, 51, 51, 0.51);
 }
+
 #content h1{
     font-size: 1.2em;
     font-weight: bold;
@@ -629,6 +647,10 @@ ul.footer_links li{
 .product_description_content{
     width:601px;
     margin-bottom: 40px;
+}
+.product_description_content a{
+    text-decoration: none;
+    color: #000;
 }
 .sidebar_menu_content{
     width: 230px;
@@ -743,6 +765,7 @@ ul.footer_links li{
     width:510px;
     height: 20px;
     border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
 }
 .product_answer{
     padding-bottom: 20px;
@@ -759,3 +782,14 @@ ul.footer_links li{
     color: #333;
     margin-left: auto;
 }
+.product_answer{
+    padding: 0 18px;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+}
+.active, .product_question_container{
+    border-bottom: none;
+}
+
