@@ -186,19 +186,21 @@
                                     </div>
                                 </div>
                                 <div class="info shipping_cost">
-                                    <span>Sprawdź czasy i koszty wysyłki</span>
+                                    <a href="#">Sprawdź czasy i koszty wysyłki</a>
                                 </div>
                             </div>
                             <div class="product_section price_tag">
                                 <div class="info actual_price">
-                                    <span id="old_price">1499,00 zł</span>
+                                    <span id="old_price">1 499,00 zł</span>
                                     <span id="new_price">1278,00 zł</span>
                                 </div>
                                 <div class="info quantity">
-                                    - 1 +
+                                    <button onclick="decrement();">-</button>
+                                    <input type="text" id="inc" value="0">
+                                    <button onclick="increment();">+</button>
                                 </div>
                                 <div class="info add_to_cart">
-                                    Dodaj do koszyka
+                                    <a href="#cartAdd" class="btn-mid">Dodaj do koszyka</a>
                                 </div>
                             </div>
                             <div class="product_section price_negotiate">
@@ -207,48 +209,50 @@
                                             <img src="images/proj_negotiations.jpg"/>
                                         </div>
                                         <div>
-                                            <span>Znalazłeś ten produkt taniej?</span>
-                                            <span>Wynegocjuj dobrą cenę</span>
+                                            <span class="prod_important">Znalazłeś ten produkt taniej?</span>
+                                            <a href="#">Wynegocjuj dobrą cenę</a>
                                         </div>
                                     </div>
                                     <div class="info compare">
-                                        <span>Dodaj do porównania</span>
+                                        <a href="#">Dodaj do porównania</a>
                                     </div>
                             </div>
                             <div class="product_section bottom_info_menu">
-                                <div class="info free_shiping">
-                                    <div>
-                                        <img src="images/1.jpg"/>
+                                <div class="bottom_info_menu_sub">
+                                    <div class="info free_shiping">
+                                        <div>
+                                            <img src="images/1.jpg"/>
+                                        </div>
+                                        <div>
+                                            <span class="prod_important">Darmowa dostawa</span>
+                                            <span>dla zamówień powyżej 600 zł</span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <span>Darmowa dostawa</span>
-                                        <span>dla zamówień powyżej 600 zł</span>
+                                    <div class="info goods_return">
+                                        <div>
+                                            <img src="images/2.jpg"/>
+                                        </div>
+                                        <div>
+                                            <span class="prod_important">Zwrot towaru</span>
+                                            <span>do 14 dni od daty zakupu</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="info goods_return">
-                                    <div>
-                                        <img src="images/2.jpg"/>
+                                    <div class="info installments">
+                                        <div>
+                                            <img src="images/3.jpg"/>
+                                        </div>
+                                        <div>
+                                            <span class="prod_important">Zakupy na raty</span>
+                                            <a href="#">oblicz ratę >></a>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <span>Zwrot towaru</span>
-                                        <span>do 14 dni od daty zakupu</span>
-                                    </div>
-                                </div>
-                                <div class="info installments">
-                                    <div>
-                                        <img src="images/3.jpg"/>
-                                    </div>
-                                    <div>
-                                        <span>Zakupy na raty</span>
-                                        <a href="#">oblicz ratę >></a>
-                                    </div>
-                                </div>
-                                <div class="info warranty">
-                                    <div>
-                                        <img src="images/4.jpg"/>
-                                    </div>
-                                    <div>
-                                        <span>Gwarancja 12 miesięcy</span>
+                                    <div class="info warranty">
+                                        <div>
+                                            <img src="images/4.jpg"/>
+                                        </div>
+                                        <div>
+                                            <span class="prod_important">Gwarancja 12 miesięcy</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -433,6 +437,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        var kt = 0;
+        function increment() {
+            kt=kt+1;
+            document.getElementById('inc').value = kt;
+        }
+        function decrement() {
+            kt--;
+            if(kt<0)
+            {
+                kt=0;
+            }
+            document.getElementById('inc').value = kt;
+        }
+    </script>
     <script>
         var acc = document.getElementsByClassName("product_question");
         var i;
